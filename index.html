@@ -1,142 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio d'Ewen B., étudiant en Réseaux et Télécommunications, spécialisé en Cybersécurité.">
-    <meta name="author" content="Ewen B.">
-    <title>Portfolio d'Ewen B.</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewen B. - Portfolio</title>
+    
     <!-- External CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
 
 <body>
+    <div class="boxed-page">
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <span class="lnr lnr-user"></span> Ewen B. Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+                    aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lnr lnr-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-nav-header">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#profile">Présentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Header Section -->
-    <header class="bg-dark py-5">
-        <div class="container text-center text-white">
-            <h1 class="display-4">Portfolio d'Ewen B.</h1>
-            <p class="lead">Étudiant en Réseaux et Télécommunications, spécialisé en Cybersécurité.</p>
+        <div id="home" class="jumbotron text-center" style="background-image: url('img/hero.jpg')">
+            <h1 class="display-3">Bienvenue sur mon Portfolio</h1>
+            <p>Je suis Ewen B., étudiant en Cybersécurité et passionné par les réseaux et télécommunications.</p>
         </div>
-    </header>
 
-    <!-- Présentation Section -->
-    <section id="presentation" class="bg-light py-5">
-        <div class="container">
-            <div class="title-wrap text-center mb-4">
-                <h2 class="section-title">Présentation</h2>
-                <p class="section-sub-title">Je suis Ewen B., étudiant en 2<sup>e</sup> année de Réseaux et Télécommunications, spécialisé en Cybersécurité. Mon objectif professionnel est de devenir un expert en sécurisation des réseaux et systèmes d'information.</p>
+        <section id="profile" class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Présentation</h2>
+                    <p>Je suis Ewen B., étudiant en 2<sup>e</sup> année de Réseaux et Télécommunications, spécialisé en Cybersécurité. Mon objectif professionnel est de devenir un expert en sécurisation des réseaux et systèmes d'information.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projets Section -->
-    <section id="projets" class="py-5">
-        <div class="container">
-            <div class="title-wrap text-center mb-4">
-                <h2 class="section-title">Projets</h2>
-                <p class="section-sub-title">Voici quelques projets que j'ai réalisés dans le cadre de mes études et de mon parcours professionnel.</p>
+        <section id="portfolio" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Mes Projets</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project">
+                            <h3>Projet de Filming de Formation</h3>
+                            <p><strong>Objectif:</strong> Filmer une formation éducative mettant en avant l'importance des bons gestes.</p>
+                            <p><strong>Développement:</strong> Enregistrement des séances et montage vidéo pour un rendu final.</p>
+                            <p><strong>Bilan:</strong> Compréhension de l'impact d'une présentation claire et structurée.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project">
+                            <h3>Projet de Sensibilisation à l'Hygiène Informatique</h3>
+                            <p><strong>Objectif:</strong> Sensibiliser à l'hygiène informatique pour améliorer la sécurité des systèmes.</p>
+                            <p><strong>Développement:</strong> Présentations et ateliers sur les mots de passe, le phishing, etc.</p>
+                            <p><strong>Bilan:</strong> Amélioration des habitudes de sécurité des participants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project">
+                            <h3>Projet de Mise en Œuvre d'un Récepteur GNSS NRTK</h3>
+                            <p><strong>Objectif:</strong> Mise en place d'un récepteur GNSS pour une précision géospatiale accrue.</p>
+                            <p><strong>Développement:</strong> Etude théorique et tests pratiques sur les récepteurs GNSS.</p>
+                            <p><strong>Bilan:</strong> Meilleure compréhension des systèmes GNSS et des différences de précision.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project">
+                            <h3>Projet de Télécommunication sur la Transmission en Bande de Base</h3>
+                            <p><strong>Objectif:</strong> Étudier la transmission en bande de base et les techniques de modulation.</p>
+                            <p><strong>Développement:</strong> Simulations et analyses du taux d'erreur binaire (BER).</p>
+                            <p><strong>Bilan:</strong> Compréhension des défis pratiques liés à la gestion des erreurs.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Projet 1 -->
-            <div class="project">
-                <h3>1. Projet de Filming de Formation</h3>
-                <p><strong>Objectif :</strong> Ce projet visait à filmer une formation en mettant en avant l'importance des bons gestes dans le cadre d'un projet éducatif.</p>
-                <p><strong>Développement :</strong> La réalisation a impliqué l'enregistrement de séances de formation, suivies de montages vidéo pour le rendu final.</p>
-                <p><strong>Bilan :</strong> Le projet a permis de comprendre l'impact d'une présentation claire et structurée dans un contexte éducatif.</p>
+        <section id="contact" class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Contactez-moi</h2>
+                    <p>Vous pouvez me contacter via les moyens suivants :</p>
+                    <ul>
+                        <li>E-mail : <a href="mailto:ewen.professionnel@example.com">ewen.professionnel@example.com</a></li>
+                        <li>LinkedIn : <a href="https://www.linkedin.com/in/ewenb" target="_blank">Mon profil LinkedIn</a></li>
+                        <li>GitHub : <a href="https://github.com/ewenb" target="_blank">Mon profil GitHub</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Projet 2 -->
-            <div class="project">
-                <h3>2. Projet de Sensibilisation à l'Hygiène Informatique</h3>
-                <p><strong>Objectif :</strong> Ce projet a consisté à sensibiliser des utilisateurs à l'importance de l'hygiène informatique pour améliorer la sécurité des systèmes.</p>
-                <p><strong>Développement :</strong> Une série de présentations pédagogiques et d'ateliers pratiques ont été organisés, abordant des thèmes comme les mots de passe, le phishing et les mises à jour logicielles.</p>
-                <p><strong>Bilan :</strong> Une amélioration notable des habitudes de sécurité des participants a été observée grâce aux ateliers pratiques et au suivi des bonnes pratiques.</p>
-            </div>
-
-            <!-- Projet 3 -->
-            <div class="project">
-                <h3>3. Projet de Mise en Œuvre d'un Récepteur GNSS NRTK</h3>
-                <p><strong>Objectif :</strong> Le projet a consisté à mettre en place un récepteur GNSS en mode NRTK pour une précision géospatiale accrue dans des applications de positionnement.</p>
-                <p><strong>Développement :</strong> Ce projet a impliqué une étude théorique sur le GNSS, la configuration de récepteurs en mode classique et NRTK, ainsi que la réalisation de tests pratiques pour analyser les résultats obtenus.</p>
-                <p><strong>Bilan :</strong> Une meilleure compréhension des systèmes GNSS et des différences de précision entre les modes classique et NRTK a été acquise à travers les tests pratiques.</p>
-            </div>
-
-            <!-- Projet 4 -->
-            <div class="project">
-                <h3>4. Projet de Télécommunication sur la Transmission en Bande de Base</h3>
-                <p><strong>Objectif :</strong> L'objectif était d'étudier la transmission en bande de base et de démontrer les techniques de modulation et de démodulation utilisées dans ce contexte.</p>
-                <p><strong>Développement :</strong> Une série de simulations a été réalisée pour tester différentes méthodes de modulation, avec des analyses des résultats comme le taux d'erreur binaire (BER).</p>
-                <p><strong>Bilan :</strong> Le projet a permis d’appréhender les défis pratiques liés à la gestion des erreurs et à la qualité des signaux dans des systèmes de transmission.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Parcours Section -->
-    <section id="parcours" class="bg-light py-5">
-        <div class="container">
-            <div class="title-wrap text-center mb-4">
-                <h2 class="section-title">Parcours</h2>
-                <p class="section-sub-title">Actuellement en 2<sup>e</sup> année de Réseaux et Télécommunications (parcours Cybersécurité), j'ai également réalisé des stages en administration réseau et configuration de systèmes télécom. Mon parcours scolaire et professionnel reflète une forte passion pour la cybersécurité et les technologies de l'information.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Passions Section -->
-    <section id="passions" class="bg-light py-5">
-        <div class="container">
-            <div class="title-wrap text-center mb-4">
-                <h2 class="section-title">Passions</h2>
-                <p class="section-sub-title">Je pratique le Taekwondo, le baseball, la course à pied et la danse de société, qui renforcent mon esprit d'équipe et ma discipline. Mes loisirs incluent les jeux de rôle, le théâtre, et la gestion de projets narratifs, qui alimentent ma créativité et ma capacité à innover dans des environnements professionnels.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacts Section -->
-    <section id="contacts" class="bg-light py-5">
-        <div class="container">
-            <div class="title-wrap text-center mb-4">
-                <h2 class="section-title">Contacts</h2>
-                <p class="section-sub-title">Tu peux me contacter via :</p>
-            </div>
-
-            <div class="contact-info text-center">
-                <p><strong>E-mail :</strong> <a href="mailto:ewen.professionnel@example.com">ewen.professionnel@example.com</a></p>
-                <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>&copy; 2025 Ewen B. Tous droits réservés.</p>
-        </div>
-    </footer>
+        </section>
+    </div>
 
     <!-- External JS -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="vendor/bootstrap/popper.min.js"></script>
-    <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="vendor/isotope/isotope.min.js"></script>
-    <script src="vendor/lightcase/lightcase.js"></script>
-    <script src="vendor/waypoints/waypoint.min.js"></script>
-    <script src="vendor/countTo/jquery.countTo.js"></script>
-
-    <!-- Main JS -->
-    <script src="js/app.min.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
